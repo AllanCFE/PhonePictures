@@ -1,0 +1,32 @@
+
+header {
+    --bg-color: #0f0f0f;
+    --text-color: #808080;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    background: var(--bg-color);
+    color: var(--text-color);
+    overflow: hidden;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.header--last, .header--profiles, .header--spotlight{
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.header--logo {
+    height: 70px;
+}
