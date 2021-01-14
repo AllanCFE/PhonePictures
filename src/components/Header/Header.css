@@ -25,6 +25,7 @@ a{
 .header--last, .header--profiles, .header--spotlight{
     display: inline-block;
     margin-right: 15px;
+    pointer-events: none;
 }
 
 .header--logo {
