@@ -9,9 +9,19 @@ function App() {
   const [slides, setSlides] = useState(null);
 
   useEffect(() =>{
+    let hold = [];
     const loadAll = async () => {
-      let slide = await youtube.getSearchId('Vl4MkZgUy1M');
-      setSlides(slide);
+      let playlist =await youtube.getPlaylistItems('PLgQtWGeazbh3IAwCYttGstwJslaKto6Td');
+      playlist.items.forEach(async element => {
+        let snip = await youtube.getSearchId(element.contentDetails.videoId);
+        snip = snip.items[0].snippet;
+        hold.push(snip);
+        console.log(hold);
+        if(hold.length>=5){
+          setSlides(hold);
+        }
+      })
+      
     }
 
     loadAll();
@@ -20,7 +30,7 @@ function App() {
   return (
     <div className="App">
       <Header />
-      {slides !== null && <Slide items={slides.items[0].snippet}/>}
+      {slides !== null &&  <Slide items={slides}/>}
       <h1>Hello React World!</h1>
     </div>
   );
