@@ -1,17 +1,17 @@
 .slide {
-    height: 80vh;
+    height: 90vh;
+    top: 0;
 }
 
 .slide--vertical {
     width: inherit;
     height: inherit;
-    background: linear-gradient(to top, #0f0f0f 5%, transparent 95%);
+    background: linear-gradient(to top, #0f0f0f 10%, transparent 90%);
 }
 
 .slide--horizontal {
     width: inherit;
     height: inherit;
-    background: linear-gradient(to right, #0f0f0f 1%, transparent 60%);
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -35,15 +35,16 @@
 
 .slide--channelTitle {
     font-size: 18px;
+    color: #808080;
 }
 
 .slide--btn {
-    padding: 30px 0px 30px 0px;
+    padding: 25px 0px 25px 0px;
 }
 
 .slide--watch {
-    font-size: 25px;
-    font-weight: bolder;
+    font-size: 20px;
+    font-weight: bold;
     color: #0f0f0f;
     background-color: #FFF;
     border-radius: 7px;
@@ -52,14 +53,6 @@
     transition: all ease 0.33s;
     padding: 8px;
     padding: 8px 15px 8px 15px;
-}
-
-#btn--fig, #btn--txt {
-    display: inline-block;
-}
-
-#btn--fig {
-    margin-bottom: -8px;
 }
 
 .slide--tags {
@@ -82,12 +75,12 @@
 
 .slide--previous {
     left: 0;
-    background: linear-gradient(to right, #111 20%, transparent 80%);
+    background: linear-gradient(to right, #111, transparent);
 }
 
 .slide--next {
     right: 0;
-    background: linear-gradient(to left, #111 20%, transparent 80%);
+    background: linear-gradient(to left, #111, transparent);
 }
 
 .slide--zero {

@@ -1,0 +1,46 @@
+.list--item {
+    display: inline-block;
+}
+
+.list h2 {
+    margin: 0 0 0 20px;
+}
+
+.list--item img {
+    transform: scale(0.9);
+    transition: all ease 0.3s;
+    border-radius: 10px;
+}
+
+.list--item img:hover{
+    transform: scale(1);
+}
+
+.list--content{
+    overflow: hidden;
+    transition: all ease 1s;
+}
+
+.list--after, .list--before {
+    position: absolute;
+    width: 40px;
+    height: 180px;
+    background: red;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    cursor:pointer;
+    transition: all ease 0.3s;
+}
+
+.list--before {
+    left: 0;
+    background: linear-gradient(to right, #111, transparent);
+}
+
+.list--after {
+    right: 0;
+    background: linear-gradient(to left, #111, transparent);
+}

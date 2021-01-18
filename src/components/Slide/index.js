@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState} from 'react';
 import './Slide.css';
 import PlayCircleFilledIcon from '@material-ui/icons/PlayCircleFilled';
 import NavigateBeforeIcon from '@material-ui/icons/NavigateBefore';
@@ -11,13 +11,11 @@ export default ({ items }) => {
     const handleNext = ()=> {
         if (slideHolder >= items.length -1) setSlideHolder(0);
         else setSlideHolder(slideHolder + 1);
-        console.log(slideHolder);
     }
 
     const handleBefore = () => {
         if(slideHolder <= 0) setSlideHolder(items.length -1);
         else setSlideHolder(slideHolder - 1);
-        console.log(slideHolder);
     }
 
     items.forEach(element => {
@@ -25,15 +23,11 @@ export default ({ items }) => {
             element.description = element.description.substring(0,200)+'[...]';
         }
     });
-
-    useEffect(()=>{
-
-    }, [items, slideHolder]);
     return (
         <section className="slide" style={{
             backgroundSize: 'cover',
             backgroundPosition: 'center',
-            backgroundImage: `url(${items[slideHolder].thumbnails.standard.url})`
+            backgroundImage: `url(${items[slideHolder].thumbnails.maxres.url})`
         }}>
             <div className="slide--previous" onClick={handleBefore}>
                 <NavigateBeforeIcon style={{fontSize: 50}} />
@@ -49,7 +43,7 @@ export default ({ items }) => {
                             <div className="slide--description">{items[slideHolder].description}</div>
                             <div className="slide--channelTitle"><strong>Diretor: </strong>{items[slideHolder].channelTitle}</div>
                             <div className="slide--btn">
-                                <a href="/" className="slide--watch"><PlayCircleFilledIcon style={{marginBottom:-3}}/> Watch</a>
+                                <a href="/" className="slide--watch"><PlayCircleFilledIcon style={{marginBottom:-5, marginLeft: -7, marginRight:5}}/> Assistir</a>
                             </div>
                             <div className="slide--tags">
                                 <strong>Tags: </strong>

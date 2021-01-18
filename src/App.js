@@ -2,6 +2,7 @@ import React, {useState,useEffect} from 'react';
 import './App.css';
 import Header from './components/Header';
 import Slide from './components/Slide';
+import Lists from './components/Lists'
 import youtube from './youtube';
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
     <div className="App">
       <Header />
       {slides !== null &&  <Slide items={slides}/>}
+      {slides !== null &&  <Lists items={slides} title="Ultimos lancamentos"/>}
       <h1>Hello React World!</h1>
     </div>
   );
