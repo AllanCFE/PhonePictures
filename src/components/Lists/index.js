@@ -1,6 +1,5 @@
 import React, {useState} from 'react';
 import './Lists.css';
-import PlayCircleFilledIcon from '@material-ui/icons/PlayCircleFilled';
 import NavigateBeforeIcon from '@material-ui/icons/NavigateBefore';
 import NavigateNextIcon from '@material-ui/icons/NavigateNext';
 
