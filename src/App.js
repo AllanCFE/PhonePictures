@@ -11,13 +11,12 @@ function App() {
   useEffect(() =>{
     let hold = [];
     const loadAll = async () => {
-      let playlist =await youtube.getPlaylistItems('PLgQtWGeazbh3IAwCYttGstwJslaKto6Td');
+      let playlist =await youtube.getPlaylistItems('PLgQtWGeazbh2jsz6Lv4FxLYOdn2TQRsRK');
       playlist.items.forEach(async element => {
         let snip = await youtube.getSearchId(element.contentDetails.videoId);
         snip = snip.items[0].snippet;
         hold.push(snip);
-        console.log(hold);
-        if(hold.length>=5){
+        if(hold.length>=playlist.items.length){
           setSlides(hold);
         }
       })
