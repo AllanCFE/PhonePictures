@@ -2,10 +2,6 @@
     display: inline-block;
 }
 
-.list h2 {
-    margin: 0 0 0 20px;
-}
-
 .list--item img {
     transform: scale(0.9);
     transition: all ease 0.3s;

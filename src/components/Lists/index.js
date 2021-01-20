@@ -25,7 +25,7 @@ export default ({items, title}) => {
 
     return (
         <div className="list">
-            <h2>{title}</h2>
+            <h2 className="divtitle">{title}</h2>
 
             <div className="list--before" onClick={handleBefore}>
                 <NavigateBeforeIcon style={{fontSize: 50}} />

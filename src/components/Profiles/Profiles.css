@@ -1,0 +1,75 @@
+.profiles {
+    left: 0;
+    right: 0;
+    margin-top: 30px;
+}
+
+.profiles h2 {
+    margin-bottom: 10px;
+}
+
+.profiles--card {
+    background: #303030;
+    width: 330px;
+    height: 500px;
+    border-radius: 20px;
+}
+
+.profiles--header {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.profiles--picture, .profiles--personal {
+    display: inline-block;
+}
+
+.profiles--picture img{
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    margin-left: 15px;
+    border-radius: 50%;
+    margin-top: 10px;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+
+.profiles--personal {
+    margin-right: 20px;
+    text-align: right;
+    margin-top: -50px;
+}
+
+.profiles--surname {
+    margin-top: -12px;
+}
+
+.profiles--city {
+    color: #808080;
+    margin-top: -5px;
+    font-weight: bold;
+}
+
+.profiles--description {
+    margin-top: 10px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 18px;
+}
+
+.profiles--lasts {
+    margin-left: 15px;
+}
+
+.profiles--lasts strong {
+    font-size: 17px;
+}

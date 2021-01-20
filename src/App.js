@@ -3,6 +3,7 @@ import './App.css';
 import Header from './components/Header';
 import Slide from './components/Slide';
 import Lists from './components/Lists'
+import Profiles from './components/Profiles'
 import youtube from './youtube';
 
 function App() {
@@ -31,7 +32,8 @@ function App() {
     <div className="App">
       <Header />
       {slides !== null &&  <Slide items={slides}/>}
-      {slides !== null &&  <Lists items={slides} title="Ultimos lancamentos"/>}
+      {slides !== null &&  <Lists items={slides} title="ULTIMOS LANÇAMENTOS"/>}
+      <Profiles />
       <h1>Hello React World!</h1>
     </div>
   );
