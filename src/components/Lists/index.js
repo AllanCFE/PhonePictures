@@ -30,7 +30,7 @@ export default ({items, title}) => {
             <div className="list--before" onClick={handleBefore}>
                 <NavigateBeforeIcon style={{fontSize: 50}} />
             </div>
-            <div className="list--after" onClick={handleAfter}>
+            <div className="list--after" onClick={window.innerWidth < items.length*320 ? handleAfter : ''}>
                 <NavigateNextIcon style={{fontSize: 50}}/>
             </div>
 
