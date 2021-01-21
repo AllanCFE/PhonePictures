@@ -9,32 +9,34 @@ import youtube from './youtube';
 function App() {
 
   const [slides, setSlides] = useState(null);
+  const [lists, setLists] = useState (null);
 
   useEffect(() =>{
-    let hold = [];
-    const loadAll = async () => {
-      let playlist =await youtube.getPlaylistItems('PLgQtWGeazbh2jsz6Lv4FxLYOdn2TQRsRK');
+    const loadAll = async (id, setFunc) => {
+      let hold = [];
+      let playlist =await youtube.getPlaylistItems(id);
       playlist.items.forEach(async element => {
         let snip = await youtube.getSearchId(element.contentDetails.videoId);
         snip = snip.items[0].snippet;
         hold.push(snip);
         if(hold.length>=playlist.items.length){
-          setSlides(hold);
+          setFunc(hold);
         }
+        console.log([hold]);
       })
-      
     }
 
-    loadAll();
+    loadAll('PLgQtWGeazbh2jsz6Lv4FxLYOdn2TQRsRK', setSlides);
+    loadAll('PLgQtWGeazbh2x_gyuUoyK-ppCf--tdFkD', setLists);
   }, []);
 
   return (
     <div className="App">
       <Header />
       {slides !== null &&  <Slide items={slides}/>}
-      {slides !== null &&  <Lists items={slides} title="ULTIMOS LANÇAMENTOS"/>}
+      {lists !== null &&  <Lists items={lists} title="ULTIMOS LANÇAMENTOS"/>}
       <Profiles />
-      <h1>Hello React World!</h1>
+      <br/>
     </div>
   );
 }

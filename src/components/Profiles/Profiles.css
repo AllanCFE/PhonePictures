@@ -8,11 +8,17 @@
     margin-bottom: 10px;
 }
 
+.profiles--content {
+    display: flex;
+    justify-content: space-evenly;
+}
+
 .profiles--card {
     background: #303030;
     width: 330px;
-    height: 500px;
+    height: 450px;
     border-radius: 20px;
+    display: inline-block;
 }
 
 .profiles--header {
@@ -55,7 +61,7 @@
 
 .profiles--description {
     margin-top: 10px;
-    height: 200px;
+    height: 150px;
     display: flex;
     align-items: center;
     justify-content: center;

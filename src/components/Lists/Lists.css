@@ -3,9 +3,10 @@
 }
 
 .list--item img {
-    transform: scale(0.9);
+    transform: scale(0.92);
     transition: all ease 0.3s;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 .list--item img:hover{
@@ -14,7 +15,7 @@
 
 .list--content{
     overflow: hidden;
-    transition: all ease 1s;
+    transition: all ease 0.7s;
 }
 
 .list--after, .list--before {

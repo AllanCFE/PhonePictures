@@ -7,29 +7,32 @@ export default () => {
             <h2 className="divtitle">DIRETORES</h2>
             <div className="profiles--area">
                 <div className="profiles--content">
-                    <div className="profiles--card">
-                        <div className="profiles--header">
-                            <div className="profiles--picture">
-                                <img alt={profiles.guilherme.name} src="https://t2.tudocdn.net/315583"></img>
+                    {Object.keys(profiles).map((key) => {
+                        return(
+                            <div className="profiles--card">
+                            <div className="profiles--header">
+                                <div className="profiles--picture">
+                                    <img alt={profiles[key].name} src={profiles[key].img}></img>
+                                </div>
+                                <div className="profiles--personal">
+                                    <h2>{profiles[key].name}</h2>
+                                    <h2 className="profiles--surname">{profiles[key].surname}</h2>
+                                    <p className="profiles--city">{profiles[key].city}</p>
+                                </div>
                             </div>
-                            <div className="profiles--personal">
-                                <h2>{profiles.guilherme.name}</h2>
-                                <h2 className="profiles--surname">{profiles.guilherme.surname}</h2>
-                                <p className="profiles--city">{profiles.guilherme.city}</p>
+                            <div className="profiles--description">
+                                "{profiles[key].resume}"
+                            </div>
+                            <div className="profiles--lasts">
+                                <strong>Last releases</strong>
+                                <ul>
+                                    <li>{profiles[key].last[0]}</li>
+                                    <li>{profiles[key].last[1]}</li>
+                                    <li>{profiles[key].last[2]}</li>
+                                </ul>
                             </div>
                         </div>
-                        <div className="profiles--description">
-                            "{profiles.guilherme.resume}"
-                        </div>
-                        <div className="profiles--lasts">
-                            <strong>Last releases</strong>
-                            <ul>
-                                <li>{profiles.guilherme.last[0]}</li>
-                                <li>{profiles.guilherme.last[1]}</li>
-                                <li>{profiles.guilherme.last[2]}</li>
-                            </ul>
-                        </div>
-                    </div>
+                    )})}
                 </div>
             </div>
         </div>
