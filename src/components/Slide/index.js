@@ -5,7 +5,6 @@ import NavigateBeforeIcon from '@material-ui/icons/NavigateBefore';
 import NavigateNextIcon from '@material-ui/icons/NavigateNext';
 
 export default ({ items }) => {
-
     let [slideHolder, setSlideHolder] = useState(0);
 
     const transitioner = () => {
@@ -23,8 +22,12 @@ export default ({ items }) => {
     }
 
     const handleBefore = () => {
-        if(slideHolder <= 0) setSlideHolder(items.length -1);
-        else setSlideHolder(slideHolder - 1);
+        transitioner();
+        setTimeout(()=>{
+            if(slideHolder <= 0) setSlideHolder(items.length -1);
+            else setSlideHolder(slideHolder - 1);
+        }, 601);
+        setTimeout(() => {transitioner()}, 1000);
     }
 
     items.forEach(element => {
