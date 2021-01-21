@@ -7,7 +7,7 @@ export default () => {
             <div className="header--left">
                 <div>
                     <a href="/">
-                        <img src="https://i.imgur.com/938Si3e.png" alt="logo" className="header--logo"/>
+                        <img src="/logo.png" alt="logo" className="header--logo"/>
                     </a>
                 </div>
             </div>

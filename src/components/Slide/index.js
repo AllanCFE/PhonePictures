@@ -8,9 +8,18 @@ export default ({ items }) => {
 
     let [slideHolder, setSlideHolder] = useState(0);
 
+    const transitioner = () => {
+        let selector = document.querySelector('.slide--zero');
+        selector.classList.toggle('transition');
+    }
+    
     const handleNext = ()=> {
-        if (slideHolder >= items.length -1) setSlideHolder(0);
-        else setSlideHolder(slideHolder + 1);
+        transitioner();
+        setTimeout(() => {
+            if (slideHolder >= items.length -1) setSlideHolder(0);
+            else setSlideHolder(slideHolder + 1);
+        }, 601);
+        setTimeout(() => {transitioner()}, 1000);
     }
 
     const handleBefore = () => {
