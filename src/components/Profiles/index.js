@@ -9,7 +9,7 @@ export default () => {
                 <div className="profiles--content">
                     {Object.keys(profiles).map((key) => {
                         return(
-                            <div className="profiles--card">
+                            <div className="profiles--card" key={key}>
                             <div className="profiles--header">
                                 <div className="profiles--picture">
                                     <img alt={profiles[key].name} src={profiles[key].img}></img>

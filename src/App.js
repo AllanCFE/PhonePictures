@@ -4,6 +4,7 @@ import Header from './components/Header';
 import Slide from './components/Slide';
 import Lists from './components/Lists'
 import Profiles from './components/Profiles'
+import Footer from './components/Footer'
 import youtube from './youtube';
 
 function App() {
@@ -22,7 +23,6 @@ function App() {
         if(hold.length>=playlist.items.length){
           setFunc(hold);
         }
-        console.log([hold]);
       })
     }
 
@@ -37,6 +37,7 @@ function App() {
       {lists !== null &&  <Lists items={lists} title="ULTIMOS LANÇAMENTOS"/>}
       <Profiles />
       <br/>
+      <Footer />
     </div>
   );
 }
