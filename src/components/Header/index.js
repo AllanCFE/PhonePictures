@@ -12,14 +12,11 @@ export default () => {
                 </div>
             </div>
             <div className="header--right">
-                <div className="header--spotlight">
-                    <a href="/">Lancamentos</a>
+                <div className="header--insta">
+                    <a href="https://www.instagram.com/phonepicturesbrasil/" target="_blank" rel="noreferrer">INSTAGRAM</a>
                 </div>
-                <div className="header--last">
-                    <a href="/">Filmes</a>
-                </div>
-                <div className="header--profiles">
-                    <a href="/">Diretores</a>
+                <div className="header--face">
+                    <a href="https://www.facebook.com/phonepicturesbrasil" target="_blank" rel="noreferrer">FACEBOOK</a>
                 </div>
             </div>
         </header>
