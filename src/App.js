@@ -5,6 +5,7 @@ import Slide from './components/Slide';
 import Lists from './components/Lists'
 import Profiles from './components/Profiles'
 import Footer from './components/Footer'
+import Load from './components/Load'
 import youtube from './youtube';
 
 function App() {
@@ -38,6 +39,7 @@ function App() {
       <Profiles />
       <br/>
       <Footer />
+      {slides == null && <Load />}
     </div>
   );
 }
