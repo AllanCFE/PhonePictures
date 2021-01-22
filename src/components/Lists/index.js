@@ -41,7 +41,7 @@ export default ({items, title}) => {
                 }}>
                     {items.map((item, key)=>(
                         <div key={key} className="list--item">
-                            <img src={item.thumbnails.medium.url} alt={item.title} />
+                            <img src={item.snippet.thumbnails.medium.url} alt={item.title} />
                         </div>
                     ))}
                 </div>

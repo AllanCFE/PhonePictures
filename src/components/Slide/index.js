@@ -5,6 +5,7 @@ import NavigateBeforeIcon from '@material-ui/icons/NavigateBefore';
 import NavigateNextIcon from '@material-ui/icons/NavigateNext';
 
 export default ({ items }) => {
+    console.log(items);
     let [slideHolder, setSlideHolder] = useState(0);
 
     const transitioner = () => {
@@ -30,16 +31,16 @@ export default ({ items }) => {
         setTimeout(() => {transitioner()}, 1000);
     }
 
-    items.forEach(element => {
-        if(element.description.length > 200) {
-            element.description = element.description.substring(0,200)+'[...]';
+    Object.keys(items).forEach(element => {
+        if(items[element].snippet.description.length > 200) {
+            items[element].snippet.description = items[element].snippet.description.substring(0,200)+'[...]';
         }
     });
     return (
         <section className="slide" style={{
             backgroundSize: 'cover',
             backgroundPosition: 'center',
-            backgroundImage: `url(${items[slideHolder].thumbnails.maxres.url})`
+            backgroundImage: `url(${items[slideHolder].snippet.thumbnails.maxres.url})`
         }}>
             <div className="slide--previous" onClick={handleBefore}>
                 <NavigateBeforeIcon style={{fontSize: 50}} />
@@ -51,15 +52,15 @@ export default ({ items }) => {
             <div className="slide--vertical">
                 <div className="slide--horizontal">
                         <div className="slide--zero">
-                            <div className="slide--title">{items[slideHolder].title}</div>
-                            <div className="slide--description">{items[slideHolder].description}</div>
-                            <div className="slide--channelTitle"><strong>Diretor: </strong>{items[slideHolder].channelTitle}</div>
+                            <div className="slide--title">{items[slideHolder].snippet.title}</div>
+                            <div className="slide--description">{items[slideHolder].snippet.description}</div>
+                            <div className="slide--channelTitle"><strong>Diretor: </strong>{items[slideHolder].snippet.channelTitle}</div>
                             <div className="slide--btn">
-                                <a href="/" className="slide--watch"><PlayCircleFilledIcon style={{marginBottom:-5, marginLeft: -7, marginRight:5}}/> Assistir</a>
+                                <a href={`https://www.youtube.com/watch?v=${items[slideHolder].id}`} className="slide--watch" target="_blank" rel="noreferrer"><PlayCircleFilledIcon style={{marginBottom:-5, marginLeft: -7, marginRight:5}}/> Assistir</a>
                             </div>
                             <div className="slide--tags">
                                 <strong>Tags: </strong>
-                                {typeof(items[slideHolder].tags) !== 'undefined'  ? items[slideHolder].tags.join(', ') : "none"}
+                                {typeof(items[slideHolder].snippet.tags) !== 'undefined'  ? items[slideHolder].snippet.tags.join(', ') : "none"}
                                 </div>
                         </div>
                 </div>
