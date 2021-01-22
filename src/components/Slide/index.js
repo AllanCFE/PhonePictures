@@ -5,7 +5,6 @@ import NavigateBeforeIcon from '@material-ui/icons/NavigateBefore';
 import NavigateNextIcon from '@material-ui/icons/NavigateNext';
 
 export default ({ items }) => {
-    console.log(items);
     let [slideHolder, setSlideHolder] = useState(0);
 
     const transitioner = () => {

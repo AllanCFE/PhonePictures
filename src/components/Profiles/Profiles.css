@@ -87,3 +87,40 @@
 .profiles--lasts li{
     margin-bottom: 7px;
 }
+
+.profiles--previous, .profiles--next {
+    position: absolute;
+    height: 480px;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    opacity: 0;
+}
+
+.profiles--previous {
+    left: 0;
+    background: linear-gradient(to right, #111, transparent);
+}
+
+.profiles--next {
+    right: 0;
+    background: linear-gradient(to left, #111, transparent);
+}
+
+@media (max-width: 768px) {
+    .profiles--card {
+        display: table;
+        margin: 0px 10px;
+        overflow: visible;
+    }
+
+    .profiles--content {
+        transition: all ease 1s;
+    }
+
+    .profiles--previous, .profiles--next{
+        opacity: 100;
+    }
+}

@@ -41,3 +41,18 @@
     right: 0;
     background: linear-gradient(to left, #111, transparent);
 }
+
+@media (max-width: 768px) {
+    .list--item img {
+        width: 200px;
+        transform: scale(0.92);
+        transition: all ease 0.3s;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+    .list--after, .list--before {
+        width: 30px;
+        height: 118.5px;
+    }
+}

@@ -57,7 +57,6 @@
     text-decoration: none;
     opacity: 100;
     transition: all ease 0.33s;
-    padding: 8px;
     padding: 8px 15px 8px 15px;
 }
 
@@ -99,4 +98,52 @@
 
 .transition {
     opacity: 0 !important;
+}
+
+@media (max-width: 768px) {
+    .slide--title {
+        font-size: 20px;
+        font-weight: bold;
+        padding-bottom: 10px;
+        transition: all ease 1s;
+        opacity: 100;
+    }
+
+    .slide--description {
+        padding-bottom: 5px;
+        font-size: 16px;
+        text-align: justify;
+        opacity: 100;
+        width: 100%;
+    }
+
+    .slide--zero {
+        width: 100%;
+        transition: all ease 0.6s;
+        opacity: 100;
+    }
+
+    .slide--horizontal {
+        padding-left: 55px;
+        padding-right: 55px;
+        padding-bottom: 30px;
+    }
+
+    .slide--channelTitle {
+        font-size: 16px;
+    }
+
+    .slide--btn {
+        padding: 18px 0px 18px 0px;
+        opacity: 100;
+    }
+
+    .slide--watch {
+        font-size: 16px;
+        padding: 6px 12px 8px 15px;
+    }
+
+    .slide--tags {
+        font-size: 14px;
+    }
 }

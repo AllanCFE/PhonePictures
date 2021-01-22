@@ -16,7 +16,7 @@ export default ({items, title}) => {
 
     const handleAfter = () => {
         let x = scrollX - Math.round(window.innerWidth / 2);
-        let listW = items.length * 320;
+        let listW = items.length * (window.innerWidth > 768 ? 320 : 200);
         if (window.innerWidth - listW > x){
             x = (window.innerWidth - listW) - 30;
         }
