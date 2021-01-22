@@ -25,6 +25,7 @@
     font-weight: bold;
     padding-bottom: 20px;
     transition: all ease 1s;
+    opacity: 100%;
 }
 
 .slide--description {
@@ -33,15 +34,18 @@
     font-size: 18px;
     width: 75%;
     text-align: justify;
+    opacity: 100%;
 }
 
 .slide--channelTitle {
     font-size: 18px;
     color: #808080;
+    opacity: 100%;
 }
 
 .slide--btn {
     padding: 25px 0px 25px 0px;
+    opacity: 100%;
 }
 
 .slide--watch {
@@ -51,7 +55,7 @@
     background-color: #FFF;
     border-radius: 7px;
     text-decoration: none;
-    opacity: 1;
+    opacity: 100%;
     transition: all ease 0.33s;
     padding: 8px;
     padding: 8px 15px 8px 15px;
@@ -60,6 +64,7 @@
 .slide--tags {
     color:#808080;
     transition: all ease 1s;
+    opacity: 100%;
 }
 
 .slide--previous, .slide--next {
@@ -72,7 +77,7 @@
     justify-content: center;
     overflow: hidden;
     cursor:pointer;
-    opacity: 1;
+    opacity: 100%;
     transition: all ease 0.3s;
 }
 
