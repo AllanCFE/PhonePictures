@@ -89,6 +89,7 @@
 .profiles--lasts li{
     margin-bottom: 7px;
     transition: all ease 0.5s;
+    margin-left: -25px;
 }
 
 .profiles--lasts li:hover{
