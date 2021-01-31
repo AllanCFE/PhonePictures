@@ -10,7 +10,7 @@ export default () => {
 
     const handleBefore = () => {
         if(window.innerWidth < 768){
-            let x = scrollX + 350;
+            let x = scrollX + 344;
             if (x>0) {
                 x = (window.innerWidth - 350)/2
             }
@@ -20,9 +20,9 @@ export default () => {
 
     const handleNext = () => {
         if(window.innerWidth < 768){
-            let x = scrollX - 350;
-            if(x<((Object.keys(profiles).length - 1)* 350) * (-1)){
-                x = (window.innerWidth - 350)/2 - (350*(Object.keys(profiles).length - 1))
+            let x = scrollX - 344;
+            if(x<((Object.keys(profiles).length - 1)* 344) * (-1)){
+                x = (window.innerWidth - 350)/2 - (344*(Object.keys(profiles).length - 1))
             }
             setScrollX(x);
         }
