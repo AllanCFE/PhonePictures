@@ -55,7 +55,7 @@ export default ({ items }) => {
                             <div className="slide--description">{items[slideHolder].snippet.description}</div>
                             <div className="slide--channelTitle"><strong>Diretor: </strong>{items[slideHolder].snippet.channelTitle}</div>
                             <div className="slide--btn">
-                                <a href={`https://www.youtube.com/watch?v=${items[slideHolder].id}`} className="slide--watch" target="_blank" rel="noreferrer"><PlayCircleFilledIcon style={{marginBottom:-5, marginLeft: -7, marginRight:5}}/> Assistir</a>
+                                <a href={`https://youtu.be/${items[slideHolder].id}`} className="slide--watch" target="_blank" rel="noreferrer"><PlayCircleFilledIcon style={{marginBottom:-5, marginLeft: -7, marginRight:5}}/> Assistir</a>
                             </div>
                             <div className="slide--tags">
                                 <strong>Tags: </strong>

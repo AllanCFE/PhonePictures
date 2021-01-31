@@ -41,7 +41,7 @@ export default ({items, title}) => {
                 }}>
                     {items.map((item, key)=>(
                         <div key={key} className="list--item">
-                            <img src={item.snippet.thumbnails.medium.url} alt={item.title} />
+                            <a href={`https://youtu.be/${item.id}`} target="_blank" rel="noreferrer"><img src={item.snippet.thumbnails.medium.url} alt={item.title} /></a>
                         </div>
                     ))}
                 </div>
