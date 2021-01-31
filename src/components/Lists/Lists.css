@@ -1,9 +1,15 @@
 .list--item {
     display: inline-block;
+    margin-bottom: 30px;
+}
+
+.divtitle {
+    /*color: red;*/
+    font-size: 1.3em;
 }
 
 .list--item img {
-    transform: scale(0.92);
+    transform: scale(0.90);
     transition: all ease 0.3s;
     border-radius: 10px;
     cursor: pointer;

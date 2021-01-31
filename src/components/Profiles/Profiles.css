@@ -120,7 +120,7 @@
     background: linear-gradient(to left, #111, transparent);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 980px) {
     .profiles--card {
         display: table;
         margin: 0px 10px;

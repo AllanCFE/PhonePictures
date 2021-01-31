@@ -11,7 +11,11 @@ import youtube from './youtube';
 function App() {
 
   const [slides, setSlides] = useState(null);
-  const [lists, setLists] = useState (null);
+  const [allLasts, setallLasts] = useState (null);
+  const [guiList, setGuiList] = useState(null);
+  const [izotonList, setIzotonList] = useState(null);
+  const [otavioList, setOtavioList] = useState(null);
+  const [alyssonList, setAlyssonList] = useState(null);
 
   useEffect(() =>{
     const loadAll = async (id, setFunc) => {
@@ -28,14 +32,22 @@ function App() {
     }
 
     loadAll('PLgQtWGeazbh2jsz6Lv4FxLYOdn2TQRsRK', setSlides);
-    loadAll('PLgQtWGeazbh2x_gyuUoyK-ppCf--tdFkD', setLists);
+    loadAll('PLgQtWGeazbh2x_gyuUoyK-ppCf--tdFkD', setallLasts);
+    loadAll('PL5Eh08TjScNaoqlY7IGSwmhDtAJnCXxQA', setGuiList);
+    loadAll('PLgQtWGeazbh05hWPhrDaPbWiyCOwZmgXx', setIzotonList);
+    loadAll('PLgQtWGeazbh0sYpH2ELBMO-IP-dR_RaWn', setOtavioList);
+    loadAll('PLgQtWGeazbh3v6VgygpaJ0dlDI2VjgZyX', setAlyssonList);
   }, []);
   
   return (
     <div className="App">
       <Header />
       {slides !== null &&  <Slide items={slides}/>}
-      {lists !== null &&  <Lists items={lists} title="ULTIMOS LANÇAMENTOS"/>}
+      {allLasts !== null &&  <Lists items={allLasts} title="ULTIMOS LANÇAMENTOS"/>}
+      {guiList  !== null &&  <Lists items={guiList} title="ULTIMOS BY GUILHERME"/>}
+      {izotonList !== null &&  <Lists items={izotonList} title="ULTIMOS BY IZOTON"/>}
+      {otavioList !== null &&  <Lists items={otavioList} title="ULTIMOS BY OTAVIO"/>}
+      {alyssonList !== null &&  <Lists items={alyssonList} title="ULTIMOS BY ALYSSON"/>}
       <Profiles />
       <br/>
       <Footer />
