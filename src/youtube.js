@@ -16,6 +16,6 @@ export default {
         return await basic_fetch(`/videos?part=snippet&id=${id}&key=${yt_key}`);
     },
     getPlaylistItems : async (id) => {
-        return await basic_fetch(`/playlistItems?part=contentDetails&playlistId=${id}&key=${yt_key}`)
+        return await basic_fetch(`/playlistItems?part=contentDetails&playlistId=${id}&maxResults=10&key=${yt_key}`)
     }
 }

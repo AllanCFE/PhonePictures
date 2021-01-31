@@ -61,9 +61,9 @@ export default () => {
                             <div className="profiles--lasts">
                                 <strong>Last releases</strong>
                                 <ul>
-                                    <li>{profiles[key].last[0]}</li>
-                                    <li>{profiles[key].last[1]}</li>
-                                    <li>{profiles[key].last[2]}</li>
+                                    <li><a href={profiles[key].last[0].link} target="_blank" rel="noreferrer">{profiles[key].last[0].title}</a></li>
+                                    <li><a href={profiles[key].last[1].link} target="_blank" rel="noreferrer">{profiles[key].last[1].title}</a></li>
+                                    <li><a href={profiles[key].last[2].link} target="_blank" rel="noreferrer">{profiles[key].last[2].title}</a></li>
                                 </ul>
                             </div>
                         </div>
