@@ -1,0 +1,19 @@
+.profile--header{
+    height: 80px;
+    background-color: #808080;
+    border-radius: 2em 2em 0px 0px;
+    padding: 10px;
+}
+
+.profile--content {
+    height: 100px;
+}
+
+.profile--footer {
+    height: 25px;
+    background-color: #808080;
+    border-radius: 0 0 2em 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

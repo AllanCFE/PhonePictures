@@ -22,14 +22,14 @@ a{
     color: inherit;
 }
 
-.header--insta, .header--face{
+.header--insta, .header--face, .header--home, .header--directors{
     display: inline-block;
     margin-right: 20px;
     font-weight: bold;
     transition: all ease 0.5s;
 }
 
-.header--insta:hover, .header--face:hover{
+.header--insta:hover, .header--face:hover, .header--home:hover, .header--directors:hover{
     color: white;
     box-shadow: 0 4px 2px -2px #808080;
 }

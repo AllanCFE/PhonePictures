@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom'
 import './Header.css'
 
 export default () => {
@@ -12,6 +13,12 @@ export default () => {
                 </div>
             </div>
             <div className="header--right">
+                <div className="header--home">
+                    <NavLink to="/">HOME</NavLink>
+                </div>
+                <div className="header--directors">
+                    <NavLink to="/directors">DIRETORES</NavLink>
+                </div> 
                 <div className="header--insta">
                     <a href="https://www.instagram.com/phonepicturesbrasil/" target="_blank" rel="noreferrer">INSTAGRAM</a>
                 </div>
