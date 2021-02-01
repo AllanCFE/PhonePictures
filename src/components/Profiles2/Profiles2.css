@@ -1,19 +1,119 @@
 .profile--header{
-    height: 80px;
+    height: 170px;
     background-color: #808080;
     border-radius: 2em 2em 0px 0px;
     padding: 10px;
+    display: flex;
+    align-items: center;
 }
 
 .profile--content {
-    height: 100px;
+    height: 210px;
+    display: flex;
+    align-items: center;
+    overflow-y: hidden;
+}
+
+.profile--header--img{
+    width: 150px;
+    height: 130px;
+}
+
+.profile--header--img img {
+    width: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    -webkit-box-shadow: 2px 2px 7px 0px rgba(50, 50, 50, 0.39);
+    -moz-box-shadow:    2px 2px 7px 0px rgba(50, 50, 50, 0.39);
+    box-shadow:         2px 2px 7px 0px rgba(50, 50, 50, 0.39);
+}
+
+.profile--header--img, .profile--header--text, .profile--resume, .profile--films {
+    display: inline-block;
 }
 
 .profile--footer {
-    height: 25px;
+    height: 80px;
     background-color: #808080;
-    border-radius: 0 0 2em 2em;
+    border-radius: 0 0 3em 3em;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 50px;
+}
+
+.profile--name h1{
+    margin-top: -10px;
+    font-size: 40px;
+}
+
+.profile--name, .profile--city {
+    height: 42px;
+    overflow: hidden;
+}
+
+.profile--city {
+    display: flex;
+    align-items: flex-end;
+}
+
+.profile--city h4 {
+    font-weight: lighter;
+}
+
+.profile--resume {
+    width: 35%;
+    padding: 10px;
+    font-weight: lighter;
+    font-style: italic;
+}
+
+.profile--films {
+    width: 65%;
+}
+
+.profile--resume blockquote:before {
+    font-family: Georgia, serif;
+    font-size: 1em;
+    line-height: 1;
+    top: 0;
+    left: 0;
+    content: "\201C";
+}
+
+.profile--resume blockquote:after {
+    font-family: Georgia, serif;
+    font-size: 1em;
+    line-height: 1;
+    top: 0;
+    left: 0;
+    content: "\201D";
+}
+
+.list--after {
+    margin-right: 50px;
+}
+
+.list--before {
+    margin-left: calc(30px + ((100% - 50px - 30px)*0.35));
+}
+
+.profile--footer--images {
+    width: 400px;
+    height: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.profile--footer--images img {
+    height: 60px;
+    transform: scale(0.8);
+    transition: all ease 0.35s;
+}
+
+.profile--footer--images img:hover{
+    transform: scale(1);
 }

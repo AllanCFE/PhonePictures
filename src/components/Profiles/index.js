@@ -1,6 +1,6 @@
 import './Profiles.css'
 import { useState } from 'react'
-import profiles from './profiles.json'
+import profiles from '../../profiles.json'
 import NavigateBeforeIcon from '@material-ui/icons/NavigateBefore';
 import NavigateNextIcon from '@material-ui/icons/NavigateNext';
 

@@ -18,6 +18,12 @@
                 "title" : "DIGITAL",
                 "link"  : "https://youtu.be/QnVM9Dd0Ttw"
             }
+        },
+        "medias":{
+            "facebook":"https://www.facebook.com/guilherme.marques.9066",
+            "instagram":"https://www.instagram.com/guilhermcortes/",
+            "letterboxd":"https://letterboxd.com/gui740/",
+            "youtube":"https://www.youtube.com/channel/UCqBA9MIhoFvItBobjET3FSA"
         }
     },
     "maria":{
@@ -39,6 +45,12 @@
                 "title" : "Je T'aime",
                 "link"  : "https://youtu.be/R6NbG1-k0F0"
             }
+        },
+        "medias":{
+            "facebook":"https://www.facebook.com/mariavitoria.izoton.7",
+            "instagram":"https://www.instagram.com/maria_izoton/",
+            "letterboxd":"https://letterboxd.com/mariaizoton/",
+            "youtube":"https://www.youtube.com/channel/UCkdt-WeasR_S0j834OpkXgQ"
         }
     },
     "otavio":{
@@ -60,6 +72,12 @@
                 "title" : "O Último Relato",
                 "link"  : "https://youtu.be/P2UlYUdYOgY"
             }
+        },
+        "medias":{
+            "facebook":"https://www.facebook.com/OtavioGaudencio",
+            "instagram":"https://www.instagram.com/tavingaudencio/",
+            "letterboxd":"https://letterboxd.com/potavicio/",
+            "youtube":"https://www.youtube.com/user/TheNachoPotavicio"
         }
     },
     "alyson":{
@@ -81,6 +99,12 @@
                 "title" : "",
                 "link"  : ""
             }
+        },
+        "medias":{
+            "facebook":"https://www.facebook.com/alysson.campos.94",
+            "instagram":"https://www.instagram.com/alysson_campos/",
+            "letterboxd":"https://letterboxd.com/alyssonc/",
+            "youtube":"https://www.youtube.com/channel/UCh4P02UphWRkelGVZ0RO6dg"
         }
     }
 }
